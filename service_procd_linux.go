@@ -172,3 +172,4 @@ start_service() {
     procd_close_instance
     echo "${name} has been started"
 }
+`
