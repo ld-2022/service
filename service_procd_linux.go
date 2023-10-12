@@ -148,7 +148,7 @@ func (p *procd) Restart() error {
 const procdScript = `#!/bin/sh /etc/rc.common
 USE_PROCD=1
 # After network starts
-START=21
+START=99
 # Before network stops
 STOP=89
 cmd="{{.Path}}{{range .Arguments}} {{.|cmd}}{{end}}"
